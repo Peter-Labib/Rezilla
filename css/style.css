@@ -215,6 +215,10 @@ form .select::after {
 .know .group3 {
   left: 30%;
   top: -80px;
+  animation-name: cercleText;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 .know .big-picture {
   margin-top: 50px;
@@ -489,3 +493,22 @@ ul li a {
     bottom: 0;
   }
 }
+
+/* animation */
+@keyframes cercleText {
+    0% {
+      transform: rotate(0);
+    }
+    25% {
+      transform: rotate(90deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    75% {
+      transform: rotate(270deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
